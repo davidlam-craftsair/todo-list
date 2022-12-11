@@ -14,7 +14,14 @@ function App() {
     }
   ]);
   return (<>
-    {todos.map((todo, i) => <div key={i}>{todo.text}</div>)}
+    {todos.map((todo, i) => <div class='app'
+      key={i}>
+      <div class='todo-list'>
+        <div class='todo'>
+          {todo.text}
+        </div>
+      </div>
+    </div>)}
   </>
   );
 }
