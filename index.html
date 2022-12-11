@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link href="./styles.css" rel="stylesheet">
+    <title>ToDos</title>
+
+    <!-- don't use babel.min.js in production environoment, too slow -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>ToDos</h1>
+    <!-- we will put our react component inside this div -->
+    <div id="root"></div>
+
+    <!-- load react -->
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+    <!-- load our react component -->
+    <script src="index.js" defer type="text/babel"></script>
+  </body>
+</html>
